@@ -1,11 +1,8 @@
-import _ from 'lodash';
+import Vue from 'vue';
 
-var s = _.join(['Hello', 'webpack'], ' ');
-console.log(s);
+import App from './App.vue';
 
-var app = new Vue({
+new Vue({
     el: '#app',
-    data: {
-        message: 'Hello Vue!'
-    }
-})
+    render: h => h(App)
+});
